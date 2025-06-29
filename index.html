@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="unitTypes-container">
+            <div onclick="convertLengthUnit()" id="length-div">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/000/331/237/small/1_-_1_-_Ruler.jpg"
+                    alt="">
+                <!-- <button id="length" onclick="convertLengthUnit()">Length</button> -->
+                <p>Length</p>
+            </div>
+
+            <div onclick="convertAreaUnit()" id="area-div">
+                <img src="https://img.freepik.com/premium-vector/uphill-icon-black-line-art-vector-logo_1223784-35356.jpg"
+                    alt="">
+                <!-- <button id="area" onclick="convertAreaUnit()">Area</button> -->
+                <p>Area</p>
+            </div>
+            <div onclick="convertDataTransferRateUnit()" id="dtr-div">
+                <img src="https://st2.depositphotos.com/4520249/44335/v/450/depositphotos_443357264-stock-illustration-data-files-sharing-icon-vector.jpg"
+                    alt="">
+                <!-- <button id="dataTransferRate" onclick="convertDataTransferRateUnit()">Data Transfer Rate</button> -->
+                <p>Data Transfer</p>
+            </div>
+            <div onclick="convertDigitalStorageUnit()" id="digital-div">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/004/154/332/small/data-storage-database-outline-style-icon-vector.jpg"
+                    alt="">
+                <!-- <button id="digitalStorage" onclick="convertDigitalStorageUnit()">Digital Storage</button> -->
+                <p>Digital Storage</p>
+            </div>
+        </div>
+        <div class="unitbox-container">
+            <div class="unitBox1">
+                <div>
+                    <input type="number" name="input-unitBox1" id="input-unitBox1">
+                </div>
+                <div>
+                    <select name="selectUnit-unitBox1" id="selectUnit-unitBox1">
+                        <option value="">Kilometre</option>
+                        <option value="">Metre</option>
+                        <option value="">Centimetre</option>
+                        <option value="">Milimetre</option>
+                        <option value="">Micrometre</option>
+                        <option value="">Nanometre</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="unitBox2">
+                <div>
+                    <input type="number" name="input-unitBox2" id="input-unitBox2">
+                </div>
+                <div>
+                    <select name="selectUnit-unitBox2" id="selectUnit-unitBox2">
+                        <option value="">Kilometre</option>
+                        <option value="">Metre</option>
+                        <option value="">Centimetre</option>
+                        <option value="">Milimetre</option>
+                        <option value="">Micrometre</option>
+                        <option value="">Nanometre</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div id="convert-btn-container">
+            <button onclick="callfunction()" id="convert-btn">Convert</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

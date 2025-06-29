@@ -1,0 +1,149 @@
+.container {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 400px;
+    border-radius: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #FFBC57;
+    padding: 40px;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.unitTypes-container div:hover {
+    box-shadow: 0 4px 8px rgba(255, 140, 0, 0.4);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.unitTypes-container div img {
+    /* border: 2px solid ; */
+    width: 55px;
+    border-radius: 8px;
+
+}
+
+.unitTypes-container div button {
+    width: 55px;
+}
+
+.unitTypes-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+@media (max-width: 400px) {
+    .unitTypes-container {
+        flex-direction: column;
+    }
+}
+
+.unitTypes-container div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    padding: 10px;
+    width: 55px;
+    color: white;
+    font-weight: bolder;
+}
+
+.unitTypes-container div p {
+    margin-top: 3px;
+}
+
+.unitTypes-container div:hover {
+    cursor: pointer;
+}
+
+.unitbox-container {
+    padding: 20px;
+    /* border: 1px solid green; */
+}
+
+.unitBox1,
+.unitBox2 {
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.unitBox1 {
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.unitBox1 input,
+.unitBox2 input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    border: 5px solid #FFD596;
+}
+
+.unitBox1 select:hover,
+.unitBox2 select:hover {
+    cursor: pointer;
+}
+
+.unitBox1 select,
+.unitBox2 select {
+    appearance: none;
+    /* For modern browsers */
+    -webkit-appearance: none;
+    /* For Safari */
+    -moz-appearance: none;
+    /* For Firefox */
+
+    background: url('data:image/svg+xml;utf8,<svg fill="%23000" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 10px center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 8px 40px 8px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+
+
+
+}
+
+#convert-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#convert-btn {
+    padding: 8px;
+    width: 150px;
+    background-color: #f5a623;
+    border: 3px solid rgb(238, 235, 235);
+    color: white;
+    font-weight: bolder;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#convert-btn:hover {
+    cursor: pointer;
+    background-color: #f3aa3c;
+    border: 3px solid white;
+}
